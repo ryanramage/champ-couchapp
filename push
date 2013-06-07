@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+./rebuild "$2"
+erica push "$1"
+say "deployed"

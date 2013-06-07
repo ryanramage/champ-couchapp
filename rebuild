@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -n "$1" ] && [ "$1" == "compile" ]; then
+    jam compile -i js/app  -i domReady -i jam/bootstrap/js/bootstrap-tooltip -i jam/bootstrap/js/bootstrap-button -i jam/bootstrap/js/bootstrap-popover  -o jam/require.prod.js;
+else
+    if [ -e "jam/require.prod.js" ]; then
+        rm jam/require.prod.js;
+    fi
+fi

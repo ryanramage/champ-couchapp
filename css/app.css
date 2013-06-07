@@ -1,0 +1,55 @@
+body {
+    color: #333;
+}
+
+.row.main-bar {
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid orange;
+}
+
+.row.next-bar {
+    margin-top: 30px;
+}
+
+.wikipedia iframe {
+    position: relative;
+    border: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .wikipedia iframe {
+        top: -10px;
+        width: 600px;
+        min-height: 400px;
+    }
+    .player-pane {
+        min-height: 500px;
+    }
+}
+
+
+.next-preview {
+    background-color: #eee;
+    padding: 10px 8px;
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+}
+
+.next-preview h5 {
+    pa
+}
+
+.next-preview form label {
+    margin-bottom: 0;
+    height: 17px;
+}
+
+fieldset.the_brain .row {
+    margin-bottom: 15px;
+}
+
+fieldset.the_brain span {
+    font-size: 10px;
+}

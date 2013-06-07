@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hoax</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+  </head>
+
+  <body >
+
+<div class="row main-bar">
+  <div class="large-4 small-12 columns player-pane">
+    <div >
+        <img src="http://placehold.it/500x500&text=Player">
+    </div>
+    <div class="next-preview hide-for-small">
+      <h5>Next Song</h5>
+      <a href="#dasdas-322332-233232-233232">Never Gonna Give You Up - Rick Astley</a>
+      <h6>as chosen by:</h6>
+      <form>
+        <label for="radio1">
+          <input name="radio1" type="radio" CHECKED="CHECKED">
+          <span class="custom radio"></span> The Brain
+        </label>
+        <label for="radio2">
+          <input name="radio1" type="radio" >
+          <span class="custom radio"></span> Playlist
+        </label>
+        <label for="radio3">
+          <input name="radio1" type="radio" >
+          <span class="custom radio"></span> Discover
+        </label>
+      </form>
+    </div>
+  </div>
+  <div class="large-8 columns">
+      <div class="row">
+
+        <table>
+          <thead>
+            <tr>
+              <th width="200">Your Rating</th>
+              <th>Play Count</th>
+              <th width="150">Last Played</th>
+              <th>Your Tags</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&#9733; &#9733; &#9733; &#9734; &#9734;  </td>
+              <td>0</td>
+              <td>Never</td>
+              <td>
+                <div id="current_song_tags"></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <dl class="sub-nav">
+          <dd class="active"><a href="#">Wikipedia</a></dd>
+          <dd><a href="#">Lyrics</a></dd>
+        </dl>
+        <div class="wikipedia">
+          <iframe src="http://en.wikipedia.org/w/index.php?title=Arcade_Fire&printable=yes" name="wikipedia_content"></iframe>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+<div class="row next-bar">
+    <div class="large-12 columns">
+      <dl class="sub-nav">
+        <dt>Settings:</dt>
+        <dd class="active"><a href="#">The Brain</a></dd>
+        <dd><a href="#">Playlist</a></dd>
+        <dd><a href="#">Discover</a></dd>
+      </dl>
+
+      <div class="row">
+
+        <form >
+          <fieldset class="the_brain">
+            <legend>The Brain</legend>
+
+
+            <div class="row">
+
+              <div class="large-4 columns">
+                <label>Favor</label>
+                <span>Unplayed</span><input type="range" /><span>High Ratings</span>
+              </div>
+
+
+              <div class="large-4 columns">
+                <label>Minimum Rating</label>
+                <div>&#9733; &#9733; &#9733; &#9734; &#9734;</div>
+              </div>
+
+            </div>
+
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Limit Music To These Tags</label>
+                <input type="text" placeholder="large-12.columns" id="limit_music_tags">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns">
+                <button class="small button secondary">Save</button> <span>makes <b>200</b> songs available for the brain</span>
+              </div>
+            </div>
+
+
+          </fieldset>
+        </form>
+
+
+      </row>
+    </div>
+  </div>
+
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript">
+      function load(){
+
+        require(['js/app', 'jquery'], function (app, $) {
+          window.$ = $;
+          app();
+          require(['/dashboard/_design/dashboard/_rewrite/static/js/topbar.js']);
+        });
+
+      }
+      function loadDev(){
+          var script = document.createElement("script");
+          script.src = 'jam/require.js';
+          script.onload = load;
+          document.head.appendChild( script );
+
+          var script2 = document.createElement("script");
+          script2.src = 'js/live.js';
+
+          document.head.appendChild( script2 );
+
+      }
+    </script>
+    <script src="jam/require.prod.js" onerror="loadDev()" onload="load()"></script>
+  </body>
+</html>
