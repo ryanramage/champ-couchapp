@@ -2,12 +2,12 @@ var couchapp = require('couchapp')
     , path = require('path');
 
 
-var hoax_views = require('./jam/hoax-views/hoax-views');
+var hoax_views = require('./jam/champ-views/champ-views');
 
 
 ddoc = {
-    _id: '_design/hoax',
-    views: hoax_views,
+    _id: '_design/champ',
+    views: champ_views,
     lists: {},
     shows: {},
     rewrites: [

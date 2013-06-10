@@ -5,6 +5,11 @@ var jam = {
             "location": "jam/bootstrap"
         },
         {
+            "name": "champ-views",
+            "location": "jam/champ-views",
+            "main": "champ-views.js"
+        },
+        {
             "name": "director",
             "location": "jam/director",
             "main": "director.js"
@@ -13,11 +18,6 @@ var jam = {
             "name": "domReady",
             "location": "jam/domReady",
             "main": "domReady.js"
-        },
-        {
-            "name": "hoax-views",
-            "location": "jam/hoax-views",
-            "main": "hoax-views.js"
         },
         {
             "name": "jquery",
@@ -76,6 +76,11 @@ if (typeof require !== "undefined" && require.config) {
             "location": "jam/bootstrap"
         },
         {
+            "name": "champ-views",
+            "location": "jam/champ-views",
+            "main": "champ-views.js"
+        },
+        {
             "name": "director",
             "location": "jam/director",
             "main": "director.js"
@@ -84,11 +89,6 @@ if (typeof require !== "undefined" && require.config) {
             "name": "domReady",
             "location": "jam/domReady",
             "main": "domReady.js"
-        },
-        {
-            "name": "hoax-views",
-            "location": "jam/hoax-views",
-            "main": "hoax-views.js"
         },
         {
             "name": "jquery",
@@ -146,6 +146,11 @@ else {
             "location": "jam/bootstrap"
         },
         {
+            "name": "champ-views",
+            "location": "jam/champ-views",
+            "main": "champ-views.js"
+        },
+        {
             "name": "director",
             "location": "jam/director",
             "main": "director.js"
@@ -154,11 +159,6 @@ else {
             "name": "domReady",
             "location": "jam/domReady",
             "main": "domReady.js"
-        },
-        {
-            "name": "hoax-views",
-            "location": "jam/hoax-views",
-            "main": "hoax-views.js"
         },
         {
             "name": "jquery",
