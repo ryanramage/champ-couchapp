@@ -2,7 +2,7 @@ var couchapp = require('couchapp')
     , path = require('path');
 
 
-var hoax_views = require('./jam/champ-views/champ-views');
+var champ_views = require('./jam/champ-views/champ-views');
 
 
 ddoc = {
