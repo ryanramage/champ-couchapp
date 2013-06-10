@@ -15,6 +15,11 @@ var jam = {
             "main": "domReady.js"
         },
         {
+            "name": "hoax-views",
+            "location": "jam/hoax-views",
+            "main": "hoax-views.js"
+        },
+        {
             "name": "jquery",
             "location": "jam/jquery",
             "main": "dist/jquery.js"
@@ -81,6 +86,11 @@ if (typeof require !== "undefined" && require.config) {
             "main": "domReady.js"
         },
         {
+            "name": "hoax-views",
+            "location": "jam/hoax-views",
+            "main": "hoax-views.js"
+        },
+        {
             "name": "jquery",
             "location": "jam/jquery",
             "main": "dist/jquery.js"
@@ -144,6 +154,11 @@ else {
             "name": "domReady",
             "location": "jam/domReady",
             "main": "domReady.js"
+        },
+        {
+            "name": "hoax-views",
+            "location": "jam/hoax-views",
+            "main": "hoax-views.js"
         },
         {
             "name": "jquery",
